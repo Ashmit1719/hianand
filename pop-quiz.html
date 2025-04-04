@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop Quiz!</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/popQuiz.js"></script>
+  <script defer src="js/backgroundMusic.js"></script>
+  <script defer src="js/animations.js"></script>
+</head>
+<body>
+  <!-- Menu Bar -->
+  <nav class="menu-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="memory-lane.html">Memory Lane</a></li>
+      <li><a href="treasure-hunt.html">Treasure Hunt</a></li>
+      <li><a href="pop-quiz.html">Pop Quiz!</a></li>
+    </ul>
+  </nav>
+  
+  <div class="background-animations"></div>
+
+  <!-- Pop Quiz Content -->
+  <section id="pop-quiz" class="center-content">
+    <h2>Pop Quiz! ✨</h2>
+    <div id="quiz-container">
+      <div class="question-block">
+        <p>1. If I could take you on a dream vacation, where would we go?</p>
+        <label><input type="radio" name="q1" value="Bora Bora"> Bora Bora, French Polynesia</label><br>
+        <label><input type="radio" name="q1" value="Maldives"> Maldives</label><br>
+        <label><input type="radio" name="q1" value="Santorini"> Santorini, Greece</label><br>
+        <label><input type="radio" name="q1" value="Pakistan"> Pakistan</label><br>
+      </div>
+      <div class="question-block">
+        <p>2. What thing about you do I love the most?</p>
+        <label><input type="radio" name="q2" value="Your eyes"> Your eyes</label><br>
+        <label><input type="radio" name="q2" value="Your hair"> Your hair</label><br>
+        <label><input type="radio" name="q2" value="Your third toe on the left foot"> Your third toe on the left foot</label><br>
+        <label><input type="radio" name="q2" value="Your laugh"> Your laugh</label><br>
+      </div>
+      <div class="question-block">
+        <p>3. What movie name do I think best describes you?</p>
+        <label><input type="radio" name="q3" value="Barbie"> Barbie</label><br>
+        <label><input type="radio" name="q3" value="12th Fail"> 12th Fail</label><br>
+        <label><input type="radio" name="q3" value="Sleeping Beauty"> Sleeping Beauty</label><br>
+        <label><input type="radio" name="q3" value="The Joker"> The Joker</label><br>
+        <label><input type="radio" name="q3" value="All of the above 🤣"> All of the above 🤣</label><br>
+      </div>
+      <div class="question-block">
+        <p>4. What’s my favorite type of date?</p>
+        <label><input type="radio" name="q4" value="Fancy candlelit dinner"> Fancy candlelit dinner</label><br>
+        <label><input type="radio" name="q4" value="Amusement Park"> Amusement Park</label><br>
+        <label><input type="radio" name="q4" value="Movie night at home"> Movie night at home</label><br>
+        <label><input type="radio" name="q4" value="Long drive"> Long drive</label><br>
+      </div>
+      <div class="question-block">
+        <p>5. If I could relive any memory with you, which one would it be?</p>
+        <input type="text" name="q5" placeholder="Type your answer here...">
+        <p class="message">Any memory with you is my favorite one ❤️</p>
+      </div>
+    </div>
+    <button onclick="submitQuiz()">Submit Quiz</button>
+    <p id="quiz-congrats" class="hidden">🎉 You got all answers right! You're amazing! 🎉</p>
+  </section>
+</body>
+</html>

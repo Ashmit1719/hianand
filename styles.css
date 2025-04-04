@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4a004a; /* Dark purple base */
+    color: #ffffff; /* White Text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Bar */
+.menu-bar {
+    background-color: #d63384; /* Pink */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-bar li {
+    margin: 0 15px;
+}
+.menu-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Centered Content */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* to account for fixed menu */
+}
+
+/* Home Page */
+#home {
+    min-height: 80vh;
+}
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+#timer {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #d63384;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Memory Lane */
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+.photo-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Treasure Hunt */
+#treasure-hunt {
+    min-height: 80vh;
+    width: 100%;
+    max-width: 800px;
+}
+#treasure-hunt .center-content {
+    margin-top: 80px;
+}
+.hidden-object {
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+.hidden-object:hover {
+    opacity: 1;
+}
+#clue-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Pop Quiz */
+#pop-quiz {
+    min-height: 80vh;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+.question-block {
+    margin: 20px 0;
+}
+#quiz-container button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Surprise Video */
+#surprise-video {
+    min-height: 80vh;
+    padding: 20px;
+}
+
+/* Background Animations */
+.background-animations {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatUp 5s infinite ease-in-out;
+}
+@keyframes floatUp {
+    0% { transform: translateY(100vh); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+.hidden {
+    display: none;
+}
+
+/* Additional Styles for Treasure Hunt Word Search and Image Grid */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clickable-icon {
+    cursor: pointer;
+}
